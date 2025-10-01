@@ -19,23 +19,22 @@
 
     <!-- Navigation -->
     <nav>
-      <a href="#">Home</a>
-      <a href="#">About Us</a>
-      <a href="#">Contact Us</a>
+      <a href="travel_recommendation.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="contactus.html">Contact Us</a>
     </nav>
 
     <!-- Search -->
     <div class="search-bar">
+      <input type="text" placeholder="Enter a destination or keyword" id="conditionInput">
       <i class="fa-solid fa-magnifying-glass"></i>
-      <input type="text" placeholder="Enter a destination or keyword">
-      <button class="search">Search</button>
-      <button class="clear">Clear</button>
+      <button class="search" id="btnSearch">Search</button>
+      <button class="clear" id="btnClear">Clear</button>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <div class="overlay"></div>
+  <section class="wrapper">
 
     <!-- Social Media -->
     <div class="social-icons">
@@ -59,6 +58,13 @@
       </p>
       <button class="book-btn">BOOK NOW</button>
     </div>
+
+      <div class="search-results" id="result">
+        
+
+      </div>
+      
   </section>
+  <script src="./travel_recommendation.js"></script>
 </body>
 </html>
